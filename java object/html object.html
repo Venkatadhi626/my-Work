@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Info</title>
+    <link rel="stylesheet" href="./object css.css">
+</head>
+<body>
+    <h1>Book Info</h1>
+    <p id="bookInfo"></p>
+    <script>
+        const book = {
+            title: "The java beginer",
+            author: "John Doe",
+            pages: 280,
+            available: true,
+            Fullbook: function(){
+                return book.title + " " + book.author + " " + book.pages + " " + book.available;
+            }
+           
+        
+        };
+    
+    document.getElementById("bookInfo").innerHTML = `Title: ${book.title} <br> Author: ${book.author} <br> Pages: ${book.pages} <br> Available: ${book.available} <br> Summary: ${book.summary}`;
+</script>
+    <script src="./js object.js"></script>
+</body>
+</html>
