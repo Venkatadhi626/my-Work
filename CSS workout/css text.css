@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.heading {
+    color: #4CAF50;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: #333;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.centered {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    color: #FF5722;
+}
+
+.shadow {
+    color: #2196F3;
+    text-shadow: 3px 3px 5px #888;
+}
