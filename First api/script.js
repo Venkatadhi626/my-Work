@@ -8,11 +8,13 @@ const data = {
     userID: 1,
 
 };
-fetch( "https://jsonplaceholder.typicode.com/todos/2" )
-method:"POST",
-body: JSON.stringify(data),
-  header:
-  "content-type": "application/json"
-.then((res) => res.json()).then((data) => console.log(data)); 
-
-});
+fetch("https://jsonplaceholder.typicode.com/todos/2", {
+  method: "POST",
+  body: JSON.stringify(data),
+  headers: {
+    "Content-Type": "application/json"
+  }
+})
+.then((res) => res.json())
+.then((data) => console.log(data))
+.catch((error) => console.error('Error:', error));
