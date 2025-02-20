@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading Inside Image</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px; /* Optional */
+        }
+
+        .image-container h2 {
+            position: absolute;
+            top: 50%;  /* Move 50% from the top */
+            left: 50%; /* Move 50% from the left */
+            transform: translate(-50%, -50%); /* Perfectly center */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="./vintage title board.webp" alt="Sample Image">
+        <h2>My Fancy Title</h2>
+    </div>
+
+</body>
+</html>
