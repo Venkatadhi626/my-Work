@@ -1,0 +1,23 @@
+body{
+  background-color: #498886;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    text-align: center;
+    background-color: bisque;
+    text-color: bisque;
+  }
+  .button {
+        border: auto;
+    color: white;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+  }

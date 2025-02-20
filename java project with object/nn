@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    
+    <h1>Java Script using Object</h1>
+      
+    <p id="demo"></p>
+
+    <script>
+ 
+    const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+    
+    document.getElementById("demo").innerHTML =
+    person.firstName + " is " + person.age + " years old.";
+    </script>
+   <img src="./serious-old-man.jpg" alt="old man" width="300" height="233">
+
+</body>
+</html>
+
