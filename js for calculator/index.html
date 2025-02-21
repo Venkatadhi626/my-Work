@@ -25,6 +25,9 @@
             function myFunction() {
                 let input = document.getElementById('display').value;
                 console.log("Current input value: " + input);
+                if(event.key === 'Enter') {
+                    calculate();
+                }
             }
         </script>  
         <br>
@@ -49,6 +52,6 @@
         <button onclick="calculate()">=</button>
     </div>
 
-    <script src="calc.js"></script>
+    <script src="./calc.js></script>
 </body>
 </html>
