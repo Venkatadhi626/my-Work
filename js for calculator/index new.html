@@ -4,24 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator </title>
-    <link rel="stylesheet" type="text/css" href="./cal with operator.css">
-    <style>
-        body {
-            background-color: #add8e6;
-        }
-    </style>
+    <link rel="stylesheet" href="calc.css">
+    
 </head>
+
 <body>
-    <h1>Simple calculator using operator</h1>
-        <div class="calculator">
-    <input type="number" id="display" onkeyup="myFunction()">
-    <div class="buttons">
-        
+<div class="container">
+    <div class="calculator">
+        <input type="number" id="display" onkeyup="myFunction()">
         <button onclick="clearScreen()">C</button>
         <button onclick="appendValue('7')">7</button>
         <button onclick="appendValue('8')">8</button>
         <button onclick="appendValue('9')">9</button>
-        <br> 
+        <br>
         <button onclick="appendValue('4')">4</button>
         <button onclick="appendValue('5')">5</button>
         <button onclick="appendValue('6')">6</button>
@@ -37,15 +32,18 @@
         <button onclick="appendOperator('*')">*</button>
         <button onclick="appendOperator('/')">/</button>
         <br>
-        <button onclick="appendvalue('0')">0</button>
-        <button onclick="appendvalue('00')">00</button> 
-        <button onclick="calculate()">=</button>
-        <br>   
-    </div>  
-
-<script src="./javascript 4.js"></script>
+        <button onclick="calculate()">=</button> 
+    </div>
+</div>
+<script>
+    let output = document.getElementById('display');
+    function display(numb){
+        output.value += numb;
+    }
+    function clearScreen(){
+        output.value = "";
+    }
+</script>
+<script src=""> </script>
 </body>
-</html>
-
-
-
+   

@@ -1,33 +1,41 @@
-let currentInput = '';
-let previousInput = '';
-let operator = '';
+let firstNumber = '';
+let secondNumber = '';
+let operation = '';
+result = 0;
 
-// Function to append numbers to the display
-function appendToDisplay(value) {
-    currentInput += value;
-    updateDisplay(currentInput);
-}
-
-// Function to set the operator
-function setOperator(op) {
-    if (currentInput === '') return;
-    if (previousInput !== '') {
-        calculateResult();
+function getNumber(num) {
+    if (operation === '') {
+        firstNumber += num;
+        updateDisplay(firstNumber);
+    } else {
+        secondNumber += num;
+        updateDisplay(secondNumber);
     }
-    operator = op;
-    previousInput = currentInput;
-    currentInput = '';
+    console.log(num);
 }
 
-// Function to calculate the result
-function calculateResult() {
-    if (previousInput === '' || currentInput === '') return;
+function getOperator(op) {
+    if (firstNumber === '') return;
+    operation = op;
+    console.log(op);
+}
 
-    let num1 = parseFloat(previousInput);
-    let num2 = parseFloat(currentInput);
-    let result = 0;
+function clearDisplay() {
+    firstNumber = '';
+    secondNumber = '';
+    operation = '';
+    result = 0;
+    updateDisplay('');
+    console.log('clear display');
+}
 
-    switch (operator) {
+const calculateEquals = () => {
+    if (firstNumber === '' || secondNumber === '' || operation === '') return;
+
+    let num1 = parseFloat(firstNumber);
+    let num2 = parseFloat(secondNumber);
+
+    switch (operation) {
         case '+':
             result = num1 + num2;
             break;
@@ -45,20 +53,14 @@ function calculateResult() {
     }
 
     updateDisplay(result);
-    currentInput = result.toString();
-    previousInput = '';
-    operator = '';
+    firstNumber = result.toString();
+    secondNumber = '';
+    operation = '';
+    console.log('calculate');
 }
 
-// Function to update the display
 function updateDisplay(value) {
     document.getElementById('display').value = value;
 }
 
-// Function to clear the display
-function clearDisplay() {
-    currentInput = '';
-    previousInput = '';
-    operator = '';
-    updateDisplay('');
-}
+let result = document.getElementById('result');
