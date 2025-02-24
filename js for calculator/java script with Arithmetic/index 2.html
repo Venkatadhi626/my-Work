@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title> JavaScript Calculator </title>
-<style
+<link rel="stylesheet" href="./index2css.css">
 </head>
 <body>
-<h1> JavaScript Simple Calculator by WsCube Tech </h1>
+<h1> JavaScript Simple Calculator </h1>
 <div class="formstyle">
 <form name="form1">
     <!-- This input box shows the button pressed by the user in calculator. -->
@@ -30,11 +30,11 @@
   <input type="button" value="/" onclick="form1.answer.value += '/' ">
   <input type="button" value="0" onclick="form1.answer.value += '0' ">
   <input type="button" value="." onclick="form1.answer.value += '.' ">
-  <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->
+  
   <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) ">
   <br>
-  <!-- Display the Cancel button and erase all data entered by the user. -->
-  <input type="button" value="Clear All" onclick="form1.answer.value = '' " id="clear" >
+  
+  <input type="button" value="" onclick="form1.answer.value = '' " id="clear" >
   <br>
 </form>
 </div>
