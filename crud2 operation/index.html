@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Form Data in Table</title>
+</head>
+<body>
+
+    <h2>Product Entry Form</h2>
+    <form onsubmit="onFormSubmit(event)">
+        <input type="text" id="productcode" placeholder="Product Code" required>
+        <input type="text" id="productname" placeholder="Product Name" required>
+        <input type="number" id="qty" placeholder="Quantity" required>
+        <input type="number" id="perprice" placeholder="Price per unit" required>
+        <button type="submit">Save</button>
+    </form>
+
+    <h2>Stored Products</h2>
+    <table id="storelist" border="1">
+        <thead>
+            <tr>
+                <th>Product Code</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price Per Unit</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+<script src="./javascript.js"></script>
+
+</body>
+</html>

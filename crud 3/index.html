@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD Operation</title>
-   
-
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .form_action--button {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -38,7 +53,7 @@
                 </form>
             </td>
             <td>
-                <table id="storelist" style="border: 1px solid black;">
+                <table id="storelist">
                     <thead>
                         <tr>
                             <th>Product Code</th>
@@ -46,17 +61,16 @@
                             <th>Qty</th>
                             <th>Price</th>
                             <th>Actions</th>
-                            
                         </tr>
                     </thead>
                     <tbody>
-                        <script type="text/javascript" src="./javascript.js"></script>
+                        <!-- Rows will be dynamically added here -->
                     </tbody>
                 </table>
             </td>
         </tr>
     </table>
 
-    
+    <script src="./javascript.js"></script>
 </body>
 </html>
