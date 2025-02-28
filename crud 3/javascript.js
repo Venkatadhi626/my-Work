@@ -15,21 +15,21 @@ function onFormSubmit(event) {
         price
     };
 
-    // Check if the product already exists
+    
     const existingProductIndex = products.findIndex(p => p.productCode === productCode);
 
     if (existingProductIndex === -1) {
-        // Add new product
+       
         products.push(product);
     } else {
-        // Update existing product
+        
         products[existingProductIndex] = product;
     }
 
-    // Clear the form
+
     event.target.reset();
 
-    // Refresh the table
+
     renderTable();
 }
 
@@ -71,5 +71,5 @@ function onDelete(productCode) {
     renderTable();
 }
 
-// Initial render
+
 renderTable();
